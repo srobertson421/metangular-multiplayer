@@ -3,8 +3,8 @@
     <h1 class="text-xs-center">Games</h1>
   </div>
 </div>
-<div class="row" ng-repeat="game in gameList.games">
+<div class="row m-b-1 m-t-1" ng-repeat="game in gameList.games">
   <div class="col-xs-12">
-    <h3 ui-sref="gameShow({id: game._id})" style="cursor:pointer;">{{game.title}}</h3>
+    <h3 class="btn btn-info w-100 p-a-2" ui-sref="gameShow({id: game._id})">{{game.title}} - <small class="text-muted">Created: {{game.createdAt | date : 'short'}}</small></h3>
   </div>
 </div>

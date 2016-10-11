@@ -7,6 +7,7 @@ import { name as Signup } from '../pages/signup/signup';
 import { name as Login } from '../pages/login/login';
 import { name as Home } from '../pages/home/home';
 import { name as About } from '../pages/about/about';
+import { name as GameShow } from '../pages/gameShow/gameShow';
 
 import template from './main.html'
 
@@ -22,7 +23,8 @@ export default angular.module(name, [
   Signup,
   Login,
   Home,
-  About
+  About,
+  GameShow
 ])
 .component(name, {
   template,

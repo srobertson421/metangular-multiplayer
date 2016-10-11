@@ -19,6 +19,8 @@ class GameAdd {
 
   submitGame() {
     Meteor.call('newGame', this.newGame);
+    this.newGame.title = '';
+    $('#collapseForm').collapse('toggle');
   }
 }
 
